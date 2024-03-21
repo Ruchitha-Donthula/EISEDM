@@ -1,0 +1,65 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema xmlns="http://schemas.microsoft.com/ado/2009/11/edm" xmlns:cg="http://schemas.microsoft.com/ado/2006/04/codegeneration" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" Namespace="EISEDM" Alias="Self" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" annotation:UseStrongSpatialTypes="false">
+  <EntityContainer Name="EISEDMContainer" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="Employees" EntityType="EISEDM.Employee" />
+    <EntitySet Name="Addresses" EntityType="EISEDM.Address" />
+    <AssociationSet Name="EmployeeAddress" Association="EISEDM.EmployeeAddress">
+      <End Role="Employee" EntitySet="Employees" />
+      <End Role="Address" EntitySet="Addresses" />
+    </AssociationSet>
+    <EntitySet Name="Departments" EntityType="EISEDM.Department" />
+    <AssociationSet Name="EmployeeDepartment" Association="EISEDM.EmployeeDepartment">
+      <End Role="Employee" EntitySet="Employees" />
+      <End Role="Department" EntitySet="Departments" />
+    </AssociationSet>
+  </EntityContainer>
+  <EntityType Name="Employee">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Name" Type="String" Nullable="false" />
+    <Property Name="DateOfBirth" Type="DateTime" Nullable="false" />
+    <Property Name="Age" Type="Int32" Nullable="true" />
+    <NavigationProperty Name="Addresses" Relationship="EISEDM.EmployeeAddress" FromRole="Employee" ToRole="Address" />
+    <NavigationProperty Name="Department" Relationship="EISEDM.EmployeeDepartment" FromRole="Employee" ToRole="Department" />
+  </EntityType>
+  <EntityType Name="Address">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="DoorNumber" Type="String" Nullable="false" />
+    <Property Name="StreetName" Type="String" Nullable="false" />
+    <Property Name="City" Type="String" Nullable="false" />
+    <Property Name="PinCode" Type="String" Nullable="false" />
+    <Property Name="State" Type="String" Nullable="false" />
+    <NavigationProperty Name="Employee" Relationship="EISEDM.EmployeeAddress" FromRole="Address" ToRole="Employee" />
+    <Property Name="EmployeeId" Type="Int32" Nullable="false" />
+  </EntityType>
+  <Association Name="EmployeeAddress">
+    <End Type="EISEDM.Employee" Role="Employee" Multiplicity="1" />
+    <End Type="EISEDM.Address" Role="Address" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Employee">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Address">
+        <PropertyRef Name="EmployeeId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityType Name="Department">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="ManagerName" Type="String" Nullable="false" />
+    <Property Name="DepartmentName" Type="String" Nullable="false" />
+    <NavigationProperty Name="Employees" Relationship="EISEDM.EmployeeDepartment" FromRole="Department" ToRole="Employee" />
+  </EntityType>
+  <Association Name="EmployeeDepartment">
+    <End Type="EISEDM.Employee" Role="Employee" Multiplicity="*" />
+    <End Type="EISEDM.Department" Role="Department" Multiplicity="1" />
+  </Association>
+</Schema>

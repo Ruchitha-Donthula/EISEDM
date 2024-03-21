@@ -1,0 +1,15 @@
+C:\Users\Admin\source\repos\EISDataModel\EmployeeInformationSystemDataAccess\bin\Debug\EmployeeInformationSystemDataAccess.dll.config
+C:\Users\Admin\source\repos\EISDataModel\EmployeeInformationSystemDataAccess\bin\Debug\EmployeeInformationSystemDataAccess.dll
+C:\Users\Admin\source\repos\EISDataModel\EmployeeInformationSystemDataAccess\bin\Debug\EmployeeInformationSystemDataAccess.pdb
+C:\Users\Admin\source\repos\EISDataModel\EmployeeInformationSystemDataAccess\bin\Debug\EISDataModel.dll
+C:\Users\Admin\source\repos\EISDataModel\EmployeeInformationSystemDataAccess\bin\Debug\EntityFramework.dll
+C:\Users\Admin\source\repos\EISDataModel\EmployeeInformationSystemDataAccess\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\Admin\source\repos\EISDataModel\EmployeeInformationSystemDataAccess\bin\Debug\EISDataModel.pdb
+C:\Users\Admin\source\repos\EISDataModel\EmployeeInformationSystemDataAccess\bin\Debug\EISDataModel.dll.config
+C:\Users\Admin\source\repos\EISDataModel\EmployeeInformationSystemDataAccess\bin\Debug\EntityFramework.xml
+C:\Users\Admin\source\repos\EISDataModel\EmployeeInformationSystemDataAccess\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\Admin\source\repos\EISDataModel\EmployeeInformationSystemDataAccess\obj\Debug\EmployeeInformationSystemDataAccess.csproj.AssemblyReference.cache
+C:\Users\Admin\source\repos\EISDataModel\EmployeeInformationSystemDataAccess\obj\Debug\EmployeeInformationSystemDataAccess.csproj.CoreCompileInputs.cache
+C:\Users\Admin\source\repos\EISDataModel\EmployeeInformationSystemDataAccess\obj\Debug\EmployeeInformationSystemDataAccess.csproj.CopyComplete
+C:\Users\Admin\source\repos\EISDataModel\EmployeeInformationSystemDataAccess\obj\Debug\EmployeeInformationSystemDataAccess.dll
+C:\Users\Admin\source\repos\EISDataModel\EmployeeInformationSystemDataAccess\obj\Debug\EmployeeInformationSystemDataAccess.pdb

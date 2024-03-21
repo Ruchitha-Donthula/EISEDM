@@ -1,0 +1,2 @@
+C:\Users\Admin\source\repos\EISDataModel\EmployeeDataAccess\obj\Debug\EmployeeInformationSystemDataAccess.csproj.AssemblyReference.cache
+C:\Users\Admin\source\repos\EISDataModel\EmployeeDataAccess\obj\Debug\EmployeeInformationSystemDataAccess.csproj.CoreCompileInputs.cache
